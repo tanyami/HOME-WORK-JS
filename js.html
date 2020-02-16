@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DOM</title>
+	</head>
+	<body>
+	<input type="text" style = "width: 200px; height: 25px">
+		<div id = "btn" style = "width: 100px; height: 50px; color: #fff; border-radius: 5px; background-color: purple; display: flex; justify-content: center; align-items: center; margin-top: 10px;">
+			Click on me			
+		</div>
+	</body>
+	<script>
+		'use strict';			
+		const input = document.getElementsByTagName('input');
+		const btn = document.getElementById ('btn');
+		
+		btn.addEventListener('click', (i) => {
+			console.log(input[0].value)
+		
+		document.getElementById('btn').childNodes[0].nodeValue = 'Done';
+
+
+		});
+</script>
+
+	</script>
+</html>
